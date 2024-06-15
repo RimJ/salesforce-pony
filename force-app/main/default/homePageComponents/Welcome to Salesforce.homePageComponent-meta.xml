@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>If you have any issues while using Salesforce, please contact Rimjhim Singh at &lt;a href=&quot;http://rimjhim@developer.com&quot;&gt;www.dutycalls.com.&lt;/a&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

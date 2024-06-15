@@ -1,0 +1,5 @@
+Please not that your opportunity {!Opportunity.Name} has the close date of tomorrow. Please close the opportunity as soon as possible.
+https://dutycalls-dev-ed.my.salesforce.com/{!Opportunity.Id}
+
+Thanks,
+Sales Support

@@ -1,0 +1,84 @@
+<apex:page id="thePage">
+    <apex:toolbar id="theToolbar">
+        <apex:outputText value="Sample Toolbar"/>
+        <apex:toolbarGroup itemSeparator="line" id="toobarGroupLinks">
+            <apex:outputLink value="http://www.salesforce.com">salesforce</apex:outputLink>
+            <apex:outputLink value="http://developer.salesforce.com">apex developer network</apex:outputLink>
+            <apex:outputLink value="https://www.google.com/"> google</apex:outputLink>
+        </apex:toolbarGroup>
+    <apex:toolbarGroup itemSeparator="line" id="secontoolbar" location="right">
+    <apex:form >
+        <apex:inputText id="inputarea">Enter Text  </apex:inputText>
+        <apex:commandButton value="Save" id="savebutton"/>
+    
+    
+    </apex:form>
+    
+    </apex:toolbarGroup>
+    </apex:toolbar>
+    
+
+
+
+
+
+
+ <apex:form >
+  
+  <apex:pageBlock > 
+      <apex:pageblockButtons >
+       <apex:commandButton action="{!save}" value="Save" /> 
+       <apex:commandButton value="Cancel"/>
+       </apex:pageblockButtons>
+      
+      
+      <h1> Enter the details here:- </h1> <br/> <br/>
+          <apex:outputLabel value="Enter Name:" for="name"></apex:outputLabel>
+          <apex:inputText id="name"/><br/> <br/>
+          Enter Age : <apex:inputText id="age"/><br/> <br/>
+          Enter username : <apex:inputText id="username"/><br/> <br/>
+          Enter password : <apex:inputSecret id="password"/> <br/> <br/>
+          Enter TextArea : <apex:inputTextarea id="coverletter"/><br/> <br/>
+          Are you currently employed? : <apex:inputCheckbox id="emp1"/><br/> <br/>
+         
+          
+          <apex:outputLink value="https://www.google.com/">Salesforce</apex:outputLink>
+          
+          <apex:panelBar >
+              <apex:panelBarItem label="Item 1" onenter="alert('Entering item 1');" onleave="alert('leaving item 1');"> Hi 1</apex:panelBarItem>
+              <apex:panelBarItem label="Item 2"> Hi 2</apex:panelBarItem>
+              <apex:panelBarItem label="Item 3"> Hi 3</apex:panelBarItem>
+          
+          </apex:panelBar>
+          
+          <apex:panelGrid columns="3" id="id" border="3">
+          <apex:outputText value="First" ></apex:outputText>
+          <apex:outputText value="First" ></apex:outputText>
+          <apex:outputText value="First" ></apex:outputText>
+          <apex:outputText value="First" ></apex:outputText>
+          <apex:outputText value="First" ></apex:outputText>
+          <apex:outputText value="First" ></apex:outputText>
+          <apex:panelGroup >
+          <apex:outputText value="First" ></apex:outputText>
+          <apex:outputText value="First" ></apex:outputText>
+          </apex:panelGroup>
+          <apex:outputText value="First" ></apex:outputText>
+          </apex:panelGrid>
+          
+          <apex:tabPanel switchType="client">
+              <apex:tab label="home" name="home1" id="tabOne"> </apex:tab>
+              <apex:tab label="contact" name="contact" id="tabTwo"> </apex:tab>
+              
+          
+          </apex:tabPanel>
+          
+               
+      
+      </apex:pageBlock>  
+      
+      
+  
+ 
+  </apex:form>
+
+</apex:page>

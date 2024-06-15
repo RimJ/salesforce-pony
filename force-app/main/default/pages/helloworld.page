@@ -1,0 +1,26 @@
+<apex:page >
+<apex:pageMessage summary="Test message" Severity="confirm" strength="3">
+</apex:pageMessage>
+<apex:form >
+  <apex:pageBlock title="Block 1">
+  
+      <apex:pageBlockSection title="Section1">
+      <apex:pageBlockSectionItem > item1 </apex:pageBlockSectionItem>
+      <apex:pageBlockSectionItem > item2 </apex:pageBlockSectionItem>
+      <apex:pageBlockSectionItem > item3 </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+  
+  </apex:pageBlock>
+  <apex:pageBlock title="Block 2">
+  <apex:pageBlockSection title="Section1">
+      <apex:pageBlockSectionItem > item1 </apex:pageBlockSectionItem>
+      <apex:pageBlockSectionItem > item2 </apex:pageBlockSectionItem>
+      <apex:pageBlockSectionItem > item3 </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+      <apex:pageBlockButtons >
+  <apex:commandButton value="Save"/>
+  <apex:commandButton value="Cancel"/>
+  </apex:pageBlockButtons>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

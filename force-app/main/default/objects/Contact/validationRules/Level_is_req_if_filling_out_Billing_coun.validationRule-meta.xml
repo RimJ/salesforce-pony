@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_is_req_if_filling_out_Billing_coun</fullName>
+    <active>true</active>
+    <description>The level field must be entered if the user fills out the billing country as UK</description>
+    <errorConditionFormula>And(
+   NOT(ISBLANK(MailingCountry)),
+			ISBLANK(text(Level__c )),
+				 MailingCountry = &apos;UK&apos;
+    )</errorConditionFormula>
+    <errorDisplayField>Level__c</errorDisplayField>
+    <errorMessage>You must fill out the level field if you are filling out the billing country</errorMessage>
+</ValidationRule>

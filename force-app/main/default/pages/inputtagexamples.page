@@ -1,0 +1,9 @@
+<apex:page >
+  <apex:form >
+    <h1>  Please fill your details </h1> <br/> <br/>
+    Enter Name : <apex:inputText id="name"/>
+      
+  
+  </apex:form>
+  
+</apex:page>
